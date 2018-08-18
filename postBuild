@@ -1,6 +1,6 @@
 #!/bin/bash
 
-add-apt-repository -y ppa:fenics-packages/fenics
+apt-add-repository -y ppa:fenics-packages/fenics
 apt-get update -qq
 apt install -y --no-install-recommends fenics
 

@@ -1,4 +1,4 @@
-FROM jupyter/all-spark-notebook:033056e6d164
+FROM ubuntu:bionic-20180526@sha256:c8c275751219dadad8fa56b3ac41ca6cb22219ff117ca98fe82b42f24e1ba64e
 
 USER root
 RUN uname -a

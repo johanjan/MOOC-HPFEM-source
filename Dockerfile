@@ -1,7 +1,6 @@
-FROM ubuntu:bionic-20180526@sha256:c8c275751219dadad8fa56b3ac41ca6cb22219ff117ca98fe82b42f24e1ba64e
+FROM ubuntu:bionic-20180724.1
 
 USER root
-RUN lsb_release -a
 RUN apt-get update
 RUN apt-get install -y software-properties-common python-software-properties module-init-tools
 RUN add-apt-repository -y ppa:fenics-packages/fenics

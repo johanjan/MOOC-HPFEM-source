@@ -7,3 +7,5 @@ RUN add-apt-repository -y ppa:fenics-packages/fenics
 RUN apt-get update
 RUN apt install -y --no-install-recommends fenics
 USER ${NB_USER}
+
+RUN pip install --no-cache-dir notebook==5.*

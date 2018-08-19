@@ -1,0 +1,7 @@
+name: fenics
+channels:
+  - conda-forge
+dependencies:
+  - python=2.7
+  - anaconda==4.2
+  - fenics=2016.1.0

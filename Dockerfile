@@ -2,7 +2,7 @@ FROM ubuntu:bionic-20180724.1
 
 USER root
 RUN apt-get update
-RUN apt-get install -y software-properties-common module-init-tools
+RUN apt-get install -y software-properties-common module-init-tools pip
 RUN add-apt-repository -y ppa:fenics-packages/fenics
 RUN apt-get update
 RUN apt install -y --no-install-recommends fenics

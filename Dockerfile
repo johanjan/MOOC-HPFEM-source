@@ -1,4 +1,4 @@
-FROM ubuntu:bionic-20180724.1
+FROM jupyter/scipy-notebook:cf6258237ff9
 
 USER root
 RUN apt-get update

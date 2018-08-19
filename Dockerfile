@@ -6,9 +6,10 @@ RUN apt-get install -y software-properties-common module-init-tools python-pip
 RUN add-apt-repository -y ppa:fenics-packages/fenics
 RUN apt-get update
 RUN apt install -y --no-install-recommends fenics
+RUN apt-get install -y python-notebook python3-notebook python3-jupyter-core
 USER ${NB_USER}
 
-RUN pip install --no-cache-dir notebook==5.*
+#RUN pip install --no-cache-dir notebook==5.*
 
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
